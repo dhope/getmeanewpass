@@ -1,0 +1,20 @@
+Package: getmeanewpass
+Type: Package
+Title: Get Me A New Password Please
+Version: 0.1.0
+Author: David Hope
+Maintainer: David Hope <david.hope@canada.ca>
+Description: I've just used the EFF password list to generate passwords for use when we have to update
+      them every 30 seconds or whatever it is.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
+Imports:
+  stringr,
+  stats,
+  utils
+Suggests: 
+    knitr,
+    rmarkdown

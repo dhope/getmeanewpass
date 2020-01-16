@@ -1,0 +1,33 @@
+---
+title: "Password Intro"
+author: "David Hope"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+vignette: >
+  %\VignetteIndexEntry{Password Intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Set your working directory to where the file is.
+
+Run:
+```{r, eval=F}
+install.packages("getmeanewpass_0.1.0.tar.gz", type = "source", repos=NULL)
+```
+
+To make your new password type:
+```{r}
+library(getmeanewpass)
+get_me_a_new_password(lengthPass = 5, type = "EFF", nInt = 2)
+
+```
+
+
+Can change length and number of integers as needed
+
+Don't save your workspace. You should clear it after using `rm(list =ls())` or `Shift-Ctrl-F10` in Rstudio
+  	
