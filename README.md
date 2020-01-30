@@ -1,8 +1,8 @@
 # getmeanewpass
 Generates a new password using the EFI code lists.
 
-To install from github, you need to have `remotes` or `devtools` installed. (`r install.packages('remotes')` or `r install.packages('devtools')`)
-Then run `r remotes::install_github("dhope/getmeanewpass")` or `r devtools::install_github("dhope/getmeanewpass")`.
+To install from github, you need to have `remotes` or `devtools` installed. (` install.packages('remotes')` or ` install.packages('devtools')`)
+Then run ` remotes::install_github("dhope/getmeanewpass")` or ` devtools::install_github("dhope/getmeanewpass")`.
 
 To install from source:
 ```r
