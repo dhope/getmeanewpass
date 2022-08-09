@@ -22,7 +22,7 @@ get_me_a_new_password <- function(lengthPass = 6, type = "EFF", nInt = 2) {
                      "Game of Thrones" = "passDice.txt",
                      "Star Wars" = "starwars_8k_2018.txt"
                      )
-
+  withr::with_preserve_seed({
   nskip <-  ifelse(type== "EFF", 0,10)
   sep_ <- ifelse(type== "EFF", "","-")
   set.seed(Sys.time())
@@ -64,8 +64,8 @@ get_me_a_new_password <- function(lengthPass = 6, type = "EFF", nInt = 2) {
   #   # set.seed(as.integer(Sys.time()))
   #   pass[[j]] <- as.integer(runif(n = 1, 1, 10)) - 1
   # }
-
-  print(stringr::str_c(pass, collapse = "-"))
+  })
+  return(stringr::str_c(pass, collapse = "-"))
 }
 
 

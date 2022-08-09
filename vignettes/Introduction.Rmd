@@ -16,18 +16,20 @@ vignette: >
 
 Run:
 ```{r, eval=F}
-install.packages("getmeanewpass_0.1.0.tar.gz", type = "source", repos=NULL)
+remotes::install_github("dhope/getmeanewpass")
 ```
 
 To make your new password type:
-```{r}
+```{r, eval=F}
 library(getmeanewpass)
 get_me_a_new_password(lengthPass = 5, type = "EFF", nInt = 2)
 
 ```
 
 
-Can change length and number of integers as needed
+Can change length and number of integers as needed.
+
+Options for password types are: `"EFF"`,`"Harry Potter"`, `"Star Trek"`, `"Game of Thrones"`, `"Star Wars"`
 
 Don't save your workspace. You should clear it after using `rm(list =ls())` or `Shift-Ctrl-F10` in Rstudio
   	
